@@ -1,0 +1,26 @@
+Summary:
+You were working with the Titanic dataset, performing data analysis using Pandas. We addressed the following points:
+
+Loading the Dataset:
+
+We used the URL https://raw.githubusercontent.com/mwaskom/seaborn-data/master/titanic.csv to load the Titanic dataset into a Pandas DataFrame.
+Common Errors and Fixes:
+
+NameError: This occurred due to missing Pandas import (pd not defined). The fix was importing Pandas using import pandas as pd.
+FileNotFoundError: This occurred due to an incorrect file path, which was corrected by ensuring the proper URL.
+AttributeError: This occurred because the method group_by() was used instead of groupby(). The correct method is df.groupby().
+SyntaxError: We also encountered issues related to unclosed parentheses in the code.
+DataFrame Operations:
+
+Checking for missing values: df.isna().sum().
+Getting the shape of the DataFrame: rows, columns = df.shape.
+Describing numeric and non-numeric columns using df.describe() and df.describe(include='object').
+Grouping and describing columns using: df.groupby("class")["age"].describe().
+This summary encapsulates the main issues and their solutions related to data analysis using Pandas in Python.
+
+
+
+
+
+
+
